@@ -17,5 +17,5 @@ if [ $a = $b ];
 		b=$a
 		a=$r
 	done
-	echo $b
+	echo "number="$b
 fi
