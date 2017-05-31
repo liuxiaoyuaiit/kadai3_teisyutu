@@ -1,0 +1,4 @@
+language: bash
+script:
+  - echo "test start" 
+  - ./17745149.sh
