@@ -20,18 +20,18 @@ if [ $# -lt 2 ];
 		exit 1
 fi
 
-#if [ $a = $b ];
-#	then
-#		echo $b
-#	else
-#		while [ 0 -lt $a ]
-#	do
-#		r=`expr $b % $a`
-#		b=$a
-#		a=$r
-#	done
-#	echo "number="$b
-#fi
+if [ $a = $b ];
+	then
+		echo $b
+	else
+		while [ 0 -lt $a ]
+	do
+		r=`expr $b % $a`
+		b=$a
+		a=$r
+	done
+	echo "number="$b
+fi
 
 m=$a
 n=$b
