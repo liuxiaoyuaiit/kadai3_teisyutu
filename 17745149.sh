@@ -7,9 +7,16 @@
 a=$1
 b=$2
 
-if [ $# -nr 2 ];
+if [ $# -ne 2 ]; 
 	then
-		echo "2 num please" 1>&2
+		echo "err!"
+		exit 1
+fi
+
+
+if [ $# -lt 2 ];
+	then
+		echo "err!!!" 1>&2
 		exit 1
 fi
 
