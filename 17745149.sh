@@ -7,6 +7,12 @@
 a=$1
 b=$2
 
+if [ $# -nr 2 ];
+	then
+		echo "2 num please" 1>&2
+		exit 1
+fi
+
 if [ $a = $b ];
 	then
 		echo $b
@@ -19,3 +25,4 @@ if [ $a = $b ];
 	done
 	echo "number="$b
 fi
+
