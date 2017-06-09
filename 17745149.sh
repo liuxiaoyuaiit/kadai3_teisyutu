@@ -9,7 +9,7 @@ b=$2
 
 if [ $# -ne 2 ]; 
 	then
-		echo "err!"
+		echo "err!" 1>&2
 		exit 1
 fi
 

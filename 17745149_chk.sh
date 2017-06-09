@@ -11,9 +11,10 @@ ERROR_EXIT () {
 #TEST#
 ######
 echo 120 > $tmp-ans
-./17745149.sh 120 > $tmp-out && ERROR_EXIT "TEST1-1"
-diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
-diff $tmp-ans $tmp-out && echo "TEST OK"
+./17745149.sh 100 120 > $tmp-out || ERROR_EXIT "TEST-1"
+diff $tmp-ans $tmp-out || ERROR_EXIT "TEST-2"
+##diff $tmp-ans $tmp-out && echo "TEST OK"
 
 echo "TEST OK"
-
+rm -f $tmp-*
+exit 0
