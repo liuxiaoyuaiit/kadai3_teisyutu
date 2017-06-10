@@ -1,7 +1,4 @@
 language: bash
 script:
   - echo "test start" 
-  - ./17745149.sh
-  - ./17745149.sh 120 40
-  - ./17745149.sh 150 50
   - ./17745149_chk.sh
